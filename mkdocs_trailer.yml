@@ -1,0 +1,12 @@
+markdown_extensions:
+  - admonition
+  - attr_list
+  - markdown_include.include:
+        base_path: docs
+  - toc:
+      permalink: false
+      toc_depth: 4
+
+plugins:
+  - search
+  - macros

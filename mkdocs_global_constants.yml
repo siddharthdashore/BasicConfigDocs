@@ -1,0 +1,11 @@
+#Variables can be accessed in .md files like this example.
+#{{ versions.python }}
+#After every change in global constants we need to execute "build.bat" file again to reflect into local debugging setup.
+
+#Content from other .md files can be included like this example. Note that here all path should added w.r.t base path of the existing page. Here in case of index we need to provide from ./content only.
+#-   {!./content/common/sample.md!}
+
+extra:
+  auther_name: Dash
+  versions:
+    python: 3.4

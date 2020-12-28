@@ -1,0 +1,21 @@
+.md-grid {
+    max-width: 100%;
+    
+}
+
+.md-sidebar {
+     width: 30rem;
+ }
+
+.md-sidebar--secondary {
+    margin-left: 156rem;
+}
+ 
+ .md-content {
+    margin-left: 30.2rem;
+	margin-right: 47.2rem;
+}
+
+.md-footer-meta {
+    display:none;
+}

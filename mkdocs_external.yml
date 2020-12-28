@@ -1,0 +1,20 @@
+site_name: Generic Configurations (Basic & Advance)
+copyright: 'Copyright &copy; 2020 Siddharth Dashore'
+
+theme:
+  logo: 'images/logo.svg'
+  name: material
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  favicon: 'assets/images/favicon.ico'
+  features:
+    - tabs
+  extra_css: 'stylesheets/extra.css'
+nav:                 
+
+- Home: 'index.md'
+- Docker:
+    - Overview: 'content/docker/overview.md'
+    - Setup Docker in Linux VM: 'content/docker/Setup_Docker_In_Linux_VM.md'
+

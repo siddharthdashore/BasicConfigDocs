@@ -13,11 +13,12 @@ theme:
   extra_css: 'stylesheets/extra.css'
 nav:                 
 
-- Home: 'index.md'
+- C# Interview Questions: 'content/C#/overview.md'
 - Docker:
     - Overview: 'content/docker/overview.md'
     - Setup Docker in Linux VM: 'content/docker/Setup_Docker_In_Linux_VM.md'
     - Setup .NET Core App in Linux: 'content/docker/Setup_netcore_App_Linux.md'
     - Setup .NET Core App in Docker: 'content/docker/Setup_netcore_App_docker.md'
     - Push Docker Image to Registry: 'content/docker/Push_docker_image_to_registry.md'
+    - Kubernetes Primary Setup: 'content/docker/Kubernetes_primary_setup.md'
 

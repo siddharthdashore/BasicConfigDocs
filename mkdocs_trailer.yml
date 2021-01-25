@@ -10,3 +10,4 @@ markdown_extensions:
 plugins:
   - search
   - macros
+  #- with-pdf

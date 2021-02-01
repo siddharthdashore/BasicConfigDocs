@@ -234,33 +234,67 @@ Ans: No, because they are not accessible outside the class.
 
 Ans: Protected Internal variables/methods are accessible within the same assembly and also from the classes that are derived from this parent class.
 
-####Q22: 
+####Q22: What are the differences between System.String and System.Text.StringBuilder classes?
 
-Ans: 
+Ans: Using Clone() method, we creates a new array object containing all the elements in the original Array and using CopyTo() method. All the elements of existing array copies into another existing array. Both methods perform a shallow copy.
 
-####Q23: 
+```C#
+string sd1 = "Hola1";
+StringBuilder sd2 = new StringBuilder();
+sd2.Append("Hola2");
+StringBuilder sd3 = new StringBuilder("Hola3");
+```
 
-Ans: 
+####Q23: What's the difference between the System.Array.CopyTo() and System.Array.Clone() ?
 
-####Q24: 
+Ans: Using Clone() method, we creates a new array object containing all the elements in the original Array and using CopyTo() method. All the elements of existing array copies into another existing array. Both methods perform a shallow copy.
 
-Ans: 
+``` C#
+string[] array1 = { "1", "2", "3" };
+string[] array2 = new string[3];
 
-####Q25: 
+string[] arrayClone = (string[])array1.Clone();
+array1.CopyTo(array2, 0);
+```
 
-Ans: 
+####Q24: How can we sort the elements of the Array in descending order?
 
-####Q26: 
+Ans: Using Sort() methods followed by Reverse() method.
 
-Ans: 
+``` C#
+string[] array1 = { "5", "2", "3" };
 
-####Q27: 
+//here count should be equal or greater then the array1 to be copied
+string[] array2 = new string[3]; 
 
-Ans: 
+string[] arrayClone = (string[])array1.Clone();
+Console.WriteLine("arrayClone: " + string.Join(",", arrayClone));
 
-####Q28: 
+array1.CopyTo(array2, 0);
+Console.WriteLine("array2: " + string.Join(",", array2));
 
-Ans: 
+Console.WriteLine("arrayClone: " + string.Join(",", array1.Reverse()));
+
+Array.Sort(array1);
+Console.WriteLine("arrayClone: " + string.Join(",", array1));
+
+```
+
+####Q25: What's the difference between an interface and abstract class?
+
+Ans: Interfaces have all the methods having only declaration but no definition. In an abstract class, we can have some concrete methods. In an interface class, all the methods are public. An abstract class may have private methods.
+
+####Q26: What is the difference between Finalize() and Dispose() methods?
+
+Ans: Dispose() is called when we want for an object to release any unmanaged resources with them. On the other hand, Finalize() is used for the same purpose, but it doesn't assure the garbage collection of an object.
+
+####Q27: What are circular references?
+
+Ans: Circular reference is situation in which two or more resources are interdependent on each other causes the lock condition and make the resources unusable.
+
+####Q28: int vs int32 c#
+
+Ans: int is a primitive type allowed by the C# compiler, whereas Int32 is the Framework Class Library type (available across languages that abide by CLS). In fact, int translates to Int32 during compilation. ... In C#, long maps to System. Int64, but in a different programming language, long could map to Int16 or Int32.
 
 ####Q29: 
 

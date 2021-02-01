@@ -13,8 +13,15 @@ theme:
   extra_css: 'stylesheets/extra.css'
 nav:                 
 
-- C# Interview Questions: 'content/C#/overview.md'
-- Docker:
+- Interview Questions:
+    - C#: 'content/C#/overview.md'
+    - Javascript: 'content/Javascript/overview.md'
+    - SQL: 'content/SQL/overview.md'
+    
+- Coding Standards:
+    - C#: 'content/C#/Coding_Standards.md'
+
+- Docker Setup:
     - Overview: 'content/docker/overview.md'
     - Setup Docker in Linux VM: 'content/docker/Setup_Docker_In_Linux_VM.md'
     - Setup .NET Core App in Linux: 'content/docker/Setup_netcore_App_Linux.md'
